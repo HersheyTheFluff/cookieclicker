@@ -1251,7 +1251,7 @@ Game.Launch=function()
 		Game.getFps=function()
 		{
 			Game.frameNumber++;
-			var currentTime=(Date.now()-Game.fpsStartTime )/1000;
+			var currentTime=(Date.now()-Game.fpsStartTime )/50;
 			var result=Math.floor((Game.frameNumber/currentTime));
 			if (currentTime>1)
 			{
