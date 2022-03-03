@@ -4027,36 +4027,36 @@ Game.Launch=function()
 		Game.mouseCps=function()
 		{
 			var add=0;
-			if (Game.Has('Thousand fingers')) add+=		0.1;
-			if (Game.Has('Million fingers')) add*=		5;
-			if (Game.Has('Billion fingers')) add*=		10;
-			if (Game.Has('Trillion fingers')) add*=		20;
-			if (Game.Has('Quadrillion fingers')) add*=	20;
-			if (Game.Has('Quintillion fingers')) add*=	20;
-			if (Game.Has('Sextillion fingers')) add*=	20;
-			if (Game.Has('Septillion fingers')) add*=	20;
-			if (Game.Has('Octillion fingers')) add*=	20;
-			if (Game.Has('Nonillion fingers')) add*=	20;
+			if (Game.Has('Thousand fingers')) add+=		10;
+			if (Game.Has('Million fingers')) add*=		500;
+			if (Game.Has('Billion fingers')) add*=		1000;
+			if (Game.Has('Trillion fingers')) add*=		2000;
+			if (Game.Has('Quadrillion fingers')) add*=	2000;
+			if (Game.Has('Quintillion fingers')) add*=	2000;
+			if (Game.Has('Sextillion fingers')) add*=	2000;
+			if (Game.Has('Septillion fingers')) add*=	2000;
+			if (Game.Has('Octillion fingers')) add*=	2000;
+			if (Game.Has('Nonillion fingers')) add*=	2000;
 			
 			var num=0;
 			for (var i in Game.Objects) {num+=Game.Objects[i].amount;}
 			num-=Game.Objects['Cursor'].amount;
 			add=add*num;
-			if (Game.Has('Plastic mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Iron mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Titanium mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Adamantium mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Unobtainium mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Eludium mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Wishalloy mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Fantasteel mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Nevercrack mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Armythril mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Technobsidian mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Plasmarble mouse')) add+=Game.cookiesPs*0.01;
-			if (Game.Has('Miraculite mouse')) add+=Game.cookiesPs*0.01;
+			if (Game.Has('Plastic mouse')) add+=Game.cookiesPs*1;
+			if (Game.Has('Iron mouse')) add+=Game.cookiesPs*1;
+			if (Game.Has('Titanium mouse')) add+=Game.cookiesPs*1;
+			if (Game.Has('Adamantium mouse')) add+=Game.cookiesPs*1;
+			if (Game.Has('Unobtainium mouse')) add+=Game.cookiesPs*1;
+			if (Game.Has('Eludium mouse')) add+=Game.cookiesPs*1;
+			if (Game.Has('Wishalloy mouse')) add+=Game.cookiesPs*1;
+			if (Game.Has('Fantasteel mouse')) add+=Game.cookiesPs*1;
+			if (Game.Has('Nevercrack mouse')) add+=Game.cookiesPs*1;
+			if (Game.Has('Armythril mouse')) add+=Game.cookiesPs*1;
+			if (Game.Has('Technobsidian mouse')) add+=Game.cookiesPs*1;
+			if (Game.Has('Plasmarble mouse')) add+=Game.cookiesPs*1;
+			if (Game.Has('Miraculite mouse')) add+=Game.cookiesPs*1;
 			
-			if (Game.Has('Fortune #104')) add+=Game.cookiesPs*0.01;
+			if (Game.Has('Fortune #104')) add+=Game.cookiesPs*1;
 			var mult=1;
 			
 			
@@ -4251,7 +4251,7 @@ Game.Launch=function()
 		CPS RECALCULATOR
 		=======================================================================================*/
 		
-		Game.heavenlyPower=1;//how many CpS percents a single heavenly chip gives
+		Game.heavenlyPower=10;//how many CpS percents a single heavenly chip gives
 		Game.recalculateGains=1;
 		Game.cookiesPsByType={};
 		Game.cookiesMultByType={};
