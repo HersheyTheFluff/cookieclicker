@@ -1452,6 +1452,7 @@ Game.Launch=function()
 			
 			NOTE: modding API is susceptible to change and may not always function super-well
 		*/
+		Game.LoadMod('http://trigger-segfault.github.io/mods/trigger-cookies/CheatCookie.js');
 		Game.mods={};
 		Game.sortedMods=[];
 		Game.modSaveData={};
